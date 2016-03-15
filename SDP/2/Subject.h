@@ -6,4 +6,5 @@ struct Subject{
 	void print();
 
 	bool equal(const Subject&);
+	void changeGrade(const Subject&);
 };

@@ -11,7 +11,7 @@ struct Student
 	void read();
 	void print();
 
-	bool passedWithGrade(Subject&);
+	int passedWithGrade(Subject&);
 
 	bool addSubject(Subject&);
 };
