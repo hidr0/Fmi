@@ -52,10 +52,8 @@ bool Student::addSubject(Subject& s){
 	}else{
 		for (int i = 0; i < subjectsCount; i++){
 			if (allSubjects[i].equal(s)){
-				if(s.grade < 2 || s.grade > 6){
+				if(s.grade >= 2 && s.grade <= 6){
 					allSubjects[i].grade = s.grade;
-				}else{
-					allSubjects[i].grade = 1;
 				}
 				return true;
 			}
